@@ -1,0 +1,57 @@
+## Ignore Visual Studio temporary files, build results, and user-specific files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Ignore build results
+bin/
+obj/
+out/
+
+## Ignore publish results
+wwwroot/
+*.publish.xml
+*.azurePubxml
+
+## Rider IDE files
+.idea/
+
+## Ignore NuGet packages
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+
+## Ignore ASP.NET Scaffolding cache
+ScaffoldingReadMe.txt
+
+## Ignore JetBrains Rider
+.idea/
+*.sln.iml
+
+## Ignore test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.testsettings
+
+## Logs
+*.log
+
+## Secret settings (user-secrets and others)
+secrets.json
+appsettings.*.local.json
+appsettings.Development.json
+
+## Others
+node_modules/
+.env
+.env.*
+.DS_Store
+Thumbs.db
