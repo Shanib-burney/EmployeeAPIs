@@ -9,6 +9,7 @@ namespace EmployeeAdminPortal.Models.DTO
 
         [Required, StringLength(100)]
         public required string Name { get; set; }
+    
         public string? Phone { get; set; }
 
         [Range(0, double.MaxValue)]
