@@ -20,3 +20,8 @@ public class User
     public Employee? Employee { get; set; }
 
 }
+
+
+    // public Role? Role { get; set; }
+    // [NotNull]
+    // public int RoleId { get; set; }

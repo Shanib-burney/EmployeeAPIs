@@ -12,6 +12,9 @@ namespace EmployeeAdminPortal.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<User> Users { get; set; }
 
+                // public DbSet<Role> Roles { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -23,6 +26,15 @@ namespace EmployeeAdminPortal.Data
 
             modelBuilder.Entity<User>()
                 .HasKey(u => u.EmployeeId); // Set EmployeeId as primary key for User
+
+                //    modelBuilder.Entity<Role>()
+                // .HasKey(u => u.RoleId); // Set RoleId as primary key for Role
+
+            // modelBuilder.Entity<Role>()
+            //     .HasOne<Role>(e => e.)
+            //     .WithMany()
+            //     .HasForeignKey(u => u.RoleId)
+            //     .IsRequired();
         }
     }
 }
